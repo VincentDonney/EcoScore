@@ -21,19 +21,3 @@ class SentimentAnalysis:
             return self.infer(text, aspect)
         if isinstance(text, list):
             return [self.infer(t, a) for t, a in zip(text, aspect)]
-
-
-def main():
-    sentiment_analysis = SentimentAnalysis()
-    text = "Le trie des déchets n'est pas vraiment bien mais le service si!"
-    aspect = ["déchets", "service"]
-    print(sentiment_analysis(text, aspect))
-
-    texts = ["Le trie des déchets n'est pas vraiment bien mais le service si!", "Le trie des déchets n'est pas vraiment bien mais le service si!"]
-    aspects = [["déchets", "service"], ["déchets", "service"]]
-    print(sentiment_analysis(texts, aspects))
-
-
-
-if __name__ == '__main__':
-    main()
