@@ -1,0 +1,2 @@
+pyabsa<2.0
+transformers==4.29.0
