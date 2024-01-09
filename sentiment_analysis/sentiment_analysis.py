@@ -13,29 +13,26 @@ class SentimentAnalysis:
 
     def infer(self, text, aspect):
         inputs = self.preprocess(text, aspect)
-        result = self.classifier.infer(inputs)
+        result = self.classifier.infer(inputs, print_result=False)
         return result
-
-    def infer_batch(self, texts, aspects):
-        inputs = [self.preprocess(text, aspect) for text, aspect in zip(texts, aspects)]
-        results = self.classifier.batch_infer(inputs)
-        return results
 
     def __call__(self, text, aspect):
         if isinstance(text, str):
-            result = self.infer(text, aspect)
+            return self.infer(text, aspect)
         if isinstance(text, list):
-            result = self.infer_batch(text, aspect)
-        print(result)
-        return result
+            return [self.infer(t, a) for t, a in zip(text, aspect)]
 
 
 def main():
     sentiment_analysis = SentimentAnalysis()
-    'Le trie des [ASP]déchets[ASP] n\'est pas vraiment bien mais le [ASP]service[ASP] si!'
     text = "Le trie des déchets n'est pas vraiment bien mais le service si!"
     aspect = ["déchets", "service"]
-    sentiment_analysis(text, aspect)
+    print(sentiment_analysis(text, aspect))
+
+    texts = ["Le trie des déchets n'est pas vraiment bien mais le service si!", "Le trie des déchets n'est pas vraiment bien mais le service si!"]
+    aspects = [["déchets", "service"], ["déchets", "service"]]
+    print(sentiment_analysis(texts, aspects))
+
 
 
 if __name__ == '__main__':
