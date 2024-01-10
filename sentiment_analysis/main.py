@@ -12,13 +12,13 @@ def main():
 
     keywords = keywords_extractor.extract_keywords(text)
     aspects = [keyword[0] for keyword in keywords]
+    print(aspects)
 
     res = sentiment_analysis(text, aspects)
-
+    #
     print(text)
     for keyword, sentiment in zip(keywords, res['sentiment']):
-        print("keyword :", keyword[0], " | theme :", keyword[1], " | sentiment :", sentiment)
-
+        print("keyword :", keyword[0], " | theme :", keyword[2], " | sentiment :", sentiment)
 
 if __name__ == '__main__':
     main()
