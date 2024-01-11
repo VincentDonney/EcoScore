@@ -61,4 +61,4 @@ class RateRestaurants:
 
 if __name__ == '__main__':
     rate_restaurants = RateRestaurants()
-    rate_restaurants.rate('../messages.json', '../output.csv')
+    rate_restaurants.rate('../reviews.json', '../output.json')
