@@ -33,20 +33,25 @@ class RateRestaurants:
         if self.data is None:
             raise Exception("You must load a json file first!")
         output = []
-        for restaurant in self.data:
+        for restaurant, infos in self.data.items():
+            name = restaurant
+            url = infos['placeUrl']
+            reviews = infos['reviews']
             reviews_sentiments = []
-            for review in restaurant['reviews']:
-                text = review['text']
+            for review in reviews:
                 keywords = self.keywords_extractor.extract_keywords(review['text'])
                 aspects = [keyword[0] for keyword in keywords]
                 themes = [keyword[2] for keyword in keywords]
-                results = self.sentiment_analysis(text, aspects)
+                results = self.sentiment_analysis(review, aspects)
 
                 reviews_sentiments.append((themes, results['sentiment']))
             # rate = {'organic': 0, 'climate':1, 'water_savy':2, 'social':3, 'governance':4, 'waste':5, 'adverse':0}
             rate = self.rating(reviews_sentiments)
-        output.append((restaurant['name'], restaurant['url'], rate))
+        output.append((name, url, rate))
         self.store_csv(output_csv, output)
 
 
 
+if __name__ == '__main__':
+    rate_restaurants = RateRestaurants()
+    rate_restaurants.rate('messages.json', 'output.csv')
