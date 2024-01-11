@@ -1,13 +1,13 @@
 class Notation:
     def __init__(self):
         self.notation = {
-            "Biologique": 3,
-            "Climat": 3,
-            "Eau": 3,
-            "Social": 3,
-            "Gouvernance": 3,
-            "Déchets": 3,
-            "Négatif": 3,
+            "organic": 3,
+            "climate": 3,
+            "water_savy": 3,
+            "social": 3,
+            "waste": 3,
+            "governance": 3,
+            "adverse": 3,
         }
 
     def calculer_note(self, valeurs):
