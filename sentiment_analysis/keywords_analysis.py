@@ -28,7 +28,7 @@ class KeywordsExtractor:
                     self.keywords.append((vector, keyword, theme))
 
     def extract_keywords(self, text):
-        words = text.lower().split()
+        words = text.split()
         words = [word for word in words if word not in self.stopwords]
         keywords = []
         for word in words:

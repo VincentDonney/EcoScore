@@ -1,8 +1,10 @@
 import csv
 import json
+from tqdm import tqdm
 
 from keywords_analysis import KeywordsExtractor
 from sentiment_analysis import SentimentAnalysis
+from notation import Notation
 
 
 class RateRestaurants:
@@ -11,7 +13,7 @@ class RateRestaurants:
         self.keywords_extractor = KeywordsExtractor()
         self.keywords_extractor.load_keywords('keywords.csv')
         self.sentiment_analysis = SentimentAnalysis()
-        self.rating = None
+        self.rating = Notation()
 
     def load_json(self, path_json):
         with open(path_json, 'r', encoding='utf-8') as f:
@@ -33,25 +35,26 @@ class RateRestaurants:
         if self.data is None:
             raise Exception("You must load a json file first!")
         output = []
-        for restaurant, infos in self.data.items():
+        for restaurant, infos in tqdm(self.data.items()):
             name = restaurant
             url = infos['placeUrl']
             reviews = infos['reviews']
             reviews_sentiments = []
-            for review in reviews:
-                keywords = self.keywords_extractor.extract_keywords(review['text'])
-                aspects = [keyword[0] for keyword in keywords]
-                themes = [keyword[2] for keyword in keywords]
-                results = self.sentiment_analysis(review, aspects)
-
-                reviews_sentiments.append((themes, results['sentiment']))
+            for review in tqdm(reviews):
+                keywords = self.keywords_extractor.extract_keywords(review)
+                if keywords:
+                    aspects = [keyword[0] for keyword in keywords]
+                    themes = [keyword[3] for keyword in keywords]
+                    results = self.sentiment_analysis(review, aspects)
+                    reviews_sentiments.extend(zip(themes, results['sentiment']))
             # rate = {'organic': 0, 'climate':1, 'water_savy':2, 'social':3, 'governance':4, 'waste':5, 'adverse':0}
             rate = self.rating(reviews_sentiments)
-        output.append((name, url, rate))
+            print(rate)
+        output.append({'name': name, 'url': url, 'rate': rate})
         self.store_csv(output_csv, output)
 
 
 
 if __name__ == '__main__':
     rate_restaurants = RateRestaurants()
-    rate_restaurants.rate('messages.json', 'output.csv')
+    rate_restaurants.rate('../messages.json', '../output.csv')
