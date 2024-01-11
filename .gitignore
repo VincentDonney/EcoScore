@@ -5,3 +5,6 @@ sentiment_analysis/cc.fr.300.*
 
 scraping/node_modules
 scraping/package-lock.json
+
+app/node_modules
+app/package-lock.json
