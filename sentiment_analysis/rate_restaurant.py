@@ -19,16 +19,20 @@ class RateRestaurants:
         with open(path_json, 'r', encoding='utf-8') as f:
             self.data = json.load(f)
 
-    def store_csv(self, path_csv, data):
+    def store_json(self, path_csv, data):
         with open(path_csv, 'w', encoding='utf-8') as f:
-            writer = csv.writer(f, delimiter=',')
-            writer.writerow(['name', 'url', 'rate_organic', 'rate_climate', 'rate_water_savy', 'rate_social',
-                             'rate_governance', 'rate_waste', 'rate_adverse'])
-            for restaurant in data:
-                writer.writerow([restaurant['name'], restaurant['url'], restaurant['rate']['organic'],
-                                 restaurant['rate']['climate'], restaurant['rate']['water_savy'],
-                                 restaurant['rate']['social'], restaurant['rate']['governance'],
-                                 restaurant['rate']['waste'], restaurant['rate']['adverse']])
+            json.dump(data, f)
+
+
+        # with open(path_csv, 'w', encoding='utf-8') as f:
+        #     writer = csv.writer(f, delimiter=',')
+        #     writer.writerow(['name', 'url', 'rate_organic', 'rate_climate', 'rate_water_savy', 'rate_social',
+        #                      'rate_governance', 'rate_waste', 'rate_adverse'])
+        #     for restaurant in data:
+        #         writer.writerow([restaurant['name'], restaurant['url'], restaurant['rate']['organic'],
+        #                          restaurant['rate']['climate'], restaurant['rate']['water_savy'],
+        #                          restaurant['rate']['social'], restaurant['rate']['governance'],
+        #                          restaurant['rate']['waste'], restaurant['rate']['adverse']])
 
     def rate(self, path_json, output_csv):
         self.load_json(path_json)
