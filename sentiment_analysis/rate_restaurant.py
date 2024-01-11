@@ -1,3 +1,4 @@
+import csv
 import json
 
 from keywords_analysis import KeywordsExtractor
@@ -16,11 +17,18 @@ class RateRestaurants:
         with open(path_json, 'r', encoding='utf-8') as f:
             self.data = json.load(f)
 
-    def store_json(self, path_json, data):
-        with open(path_json, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+    def store_csv(self, path_csv, data):
+        with open(path_csv, 'w', encoding='utf-8') as f:
+            writer = csv.writer(f, delimiter=',')
+            writer.writerow(['name', 'url', 'rate_organic', 'rate_climate', 'rate_water_savy', 'rate_social',
+                             'rate_governance', 'rate_waste', 'rate_adverse'])
+            for restaurant in data:
+                writer.writerow([restaurant['name'], restaurant['url'], restaurant['rate']['organic'],
+                                 restaurant['rate']['climate'], restaurant['rate']['water_savy'],
+                                 restaurant['rate']['social'], restaurant['rate']['governance'],
+                                 restaurant['rate']['waste'], restaurant['rate']['adverse']])
 
-    def rate(self, path_json, json_output):
+    def rate(self, path_json, output_csv):
         self.load_json(path_json)
         if self.data is None:
             raise Exception("You must load a json file first!")
@@ -37,9 +45,8 @@ class RateRestaurants:
                 reviews_sentiments.append((themes, results['sentiment']))
             # rate = {'organic': 0, 'climate':1, 'water_savy':2, 'social':3, 'governance':4, 'waste':5, 'adverse':0}
             rate = self.rating(reviews_sentiments)
-        output.append((restaurant['name'], rate))
-        # out = [{'name':restaurant_name, 'url': url_restaurant, 'rate': {'organic': 0, 'climate':1, 'water_savy':2, 'social':3, 'governance':4, 'waste':5, 'adverse':0}}, ...]
-        self.store_json(json_output, output)
+        output.append((restaurant['name'], restaurant['url'], rate))
+        self.store_csv(output_csv, output)
 
 
 
