@@ -50,7 +50,7 @@ class RateRestaurants:
             # rate = {'organic': 0, 'climate':1, 'water_savy':2, 'social':3, 'governance':4, 'waste':5, 'adverse':0}
             rate = self.rating(reviews_sentiments)
             print(rate)
-        output.append({'name': name, 'url': url, 'rate': rate})
+            output.append({'name': name, 'url': url, 'rate': rate})
         self.store_csv(output_csv, output)
 
 
