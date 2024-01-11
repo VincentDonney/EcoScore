@@ -2,14 +2,20 @@ const { TaskResponse } = require("./TaskManager");
 
 async function scrollPage(page, scrollContainer, bar, scrollsNumber, intervalBetweenScroll) {
     const scrollNumberMax = scrollsNumber;
+    let secureScroll = false;
     let lastHeight = await page.evaluate(`document.querySelector("${scrollContainer}").scrollHeight`);
     while (scrollsNumber-- > 0) {
         bar.tick();
         await page.evaluate(`document.querySelector("${scrollContainer}").scrollTo(0, document.querySelector("${scrollContainer}").scrollHeight)`);
         await page.waitForTimeout(intervalBetweenScroll);
         let newHeight = await page.evaluate(`document.querySelector("${scrollContainer}").scrollHeight`);
-        if (newHeight === lastHeight)
-            break;
+        if (newHeight === lastHeight) {
+            if (secureScroll)
+                break;
+            else
+                secureScroll = true;
+        } else
+            secureScroll = false;
         lastHeight = newHeight;
     }
     bar.tick(scrollNumberMax);
