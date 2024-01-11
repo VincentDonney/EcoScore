@@ -1,10 +1,11 @@
 from keywords_analysis import KeywordsExtractor
 from sentiment_analysis import SentimentAnalysis
+from notation import Notation
 
 
 def main():
     keywords_extractor = KeywordsExtractor()
-    keywords_extractor.load_keywords('keywords.csv')
+    keywords_extractor.load_keywords("keywords.csv")
 
     sentiment_analysis = SentimentAnalysis()
 
@@ -17,8 +18,29 @@ def main():
     res = sentiment_analysis(text, aspects)
     #
     print(text)
-    for keyword, sentiment in zip(keywords, res['sentiment']):
-        print("keyword :", keyword[0], " | theme :", keyword[2], " | sentiment :", sentiment)
+    sentiments = []
+    for keyword, sentiment in zip(keywords, res["sentiment"]):
+        print(
+            "keyword :",
+            keyword[0],
+            " | theme :",
+            keyword[2],
+            " | sentiment :",
+            sentiment,
+        )
+        sentiments.append((keyword[2], sentiment))
+    # sentiments = [
+    # ("Biologique", "positif"),
+    # ("Climat", "négatif"),
+    # ("Eau", "positif"),
+    # ("Eau", "positif"),
+    # ("Social", "positif")
+    # ]
 
-if __name__ == '__main__':
+    notation = Notation()
+    notation.note(sentiments)
+    print(notation.notation)
+
+
+if __name__ == "__main__":
     main()
