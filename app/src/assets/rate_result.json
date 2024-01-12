@@ -1,0 +1,210 @@
+[
+    {
+        "name": "BrasserieGeorges",
+        "url": "https://www.google.com/maps/place/Brasserie+Georges/@45.748611187679145,4.828291222781677,15z/data=!4m10!1m2!2m1!1srestaurants+lyon!3m6!1s0x47f4ea4b3d8af4f7:0x9fd71c9b0d71f8b2!8m2!3d45.7482668!4d4.8283066!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARRyZXN0YXVyYW50X2JyYXNzZXJpZeABAA!16s%2Fm%2F09k6fg7?entry=ttu",
+        "rate": {
+            "rate_organic": "4.178947368421053",
+            "rate_climate": "3.276923076923077",
+            "rate_water_savy": "4.294117647058823",
+            "rate_social": "3.8435754189944134",
+            "rate_governance": "3.9479166666666665",
+            "rate_waste": "3.9130434782608696",
+            "rate_adverse": "3.6153846153846154"
+        }
+    },
+    {
+        "name": "LikeAnElephant",
+        "url": "https://www.google.com/maps/place/Like+An+Elephant/@45.775069780740395,4.834412076753943,14z/data=!3m1!5s0x47f4eae333f23e7f:0xe91c85b57129f9b9!4m10!1m2!2m1!1srestaurant+vegan+lyon!3m6!1s0x47f4eae333f24f49:0x7d22b61070bf8189!8m2!3d45.7736361!4d4.834775!15sChVyZXN0YXVyYW50IHZlZ2FuIGx5b25aFyIVcmVzdGF1cmFudCB2ZWdhbiBseW9ukgEQdmVnYW5fcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOd2RqZElaVUZSRUFF4AEA!16s%2Fg%2F11f_c06cxf?entry=ttu",
+        "rate": {
+            "rate_organic": "4.459227467811159",
+            "rate_climate": "3.973684210526316",
+            "rate_water_savy": "3.6153846153846154",
+            "rate_social": "4.551181102362205",
+            "rate_governance": "4.595238095238095",
+            "rate_waste": "4.515151515151516",
+            "rate_adverse": "3.857142857142857"
+        }
+    },
+    {
+        "name": "CulinaHortus",
+        "url": "https://www.google.com/maps/place/Culina+Hortus/@45.76764603562431,4.8373303200492614,14z/data=!3m1!5s0x47f4eaf91acb1013:0x7d5dba0aae763560!4m11!1m3!2m2!1srestaurant+vegan+lyon!6e5!3m6!1s0x47f4eb5dc2e61c57:0xe67c5e6118fd62a9!8m2!3d45.7666511!4d4.8374171!15sChVyZXN0YXVyYW50IHZlZ2FuIGx5b25aFyIVcmVzdGF1cmFudCB2ZWdhbiBseW9ukgEVdmVnZXRhcmlhbl9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU54TWpkSFlXZEJSUkFC4AEA!16s%2Fg%2F11gnqf3zgj?entry=ttu",
+        "rate": {
+            "rate_organic": "4.410256410256411",
+            "rate_climate": "4.220779220779221",
+            "rate_water_savy": "4.142857142857143",
+            "rate_social": "4.3173076923076925",
+            "rate_governance": "4.428571428571429",
+            "rate_waste": "4.545454545454546",
+            "rate_adverse": "4.2"
+        }
+    },
+    {
+        "name": "BulleRestaurantdeFourvièreGuyLassausaie",
+        "url": "https://www.google.com/maps/place/Bulle+-+Restaurant+de+Fourvière+-+Guy+Lassausaie/@45.76224849733711,4.822505444934769,15.25z/data=!3m1!5s0x47f4eba90ac325e7:0x88ea11ebb93e781a!4m10!1m2!2m1!1srestaurants+lyon!3m6!1s0x47f4eb7b6a8575f1:0x78af86f45f627f59!8m2!3d45.7618548!4d4.8226127!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARFmcmVuY2hfcmVzdGF1cmFudOABAA!16s%2Fg%2F11pz19syyj?entry=ttu",
+        "rate": {
+            "rate_organic": "4.0732984293193715",
+            "rate_climate": "3.4954954954954953",
+            "rate_water_savy": "2.6538461538461537",
+            "rate_social": "3.81055900621118",
+            "rate_governance": "3.9130434782608696",
+            "rate_waste": "3.8333333333333335",
+            "rate_adverse": "3.142857142857143"
+        }
+    },
+    {
+        "name": "LesFilsàMamanLyon",
+        "url": "https://www.google.com/maps/place/Les+Fils+à+Maman+Lyon/@45.767175310017215,4.837162181419575,15z/data=!4m11!1m3!2m2!1srestaurants+lyon!6e5!3m6!1s0x47f4eaf9107dd203:0x6ac312a16de93c5b!8m2!3d45.7668011!4d4.837248!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARFmcmVuY2hfcmVzdGF1cmFudOABAA!16s%2Fg%2F1hc1ykz9w?entry=ttu",
+        "rate": {
+            "rate_organic": "4.20703125",
+            "rate_climate": "3.4761904761904763",
+            "rate_water_savy": "3.1818181818181817",
+            "rate_social": "3.4586466165413534",
+            "rate_governance": "3.7131782945736433",
+            "rate_waste": "2.7551020408163267",
+            "rate_adverse": "3.6666666666666665"
+        }
+    },
+    {
+        "name": "McDonalds",
+        "url": "https://www.google.com/maps/place/McDonald's/@45.767043622906534,4.835871198401603,14z/data=!3m1!5s0x47f4eaf8db47d903:0x89f1e74a8d8e08a9!4m10!1m2!2m1!1smacdo+lyon!3m6!1s0x47f4eaf8daddcaeb:0xc7986b20097d4f70!8m2!3d45.7656489!4d4.8361455!15sCgptYWNkbyBseW9uWgwiCm1hY2RvIGx5b26SARRmYXN0X2Zvb2RfcmVzdGF1cmFudOABAA!16s%2Fg%2F11b8vgq1vz?entry=ttu",
+        "rate": {
+            "rate_organic": "2.238095238095238",
+            "rate_climate": "1.5",
+            "rate_water_savy": "2.5064935064935066",
+            "rate_social": "1.7142857142857142",
+            "rate_governance": "1.8203592814371257",
+            "rate_waste": "1.2941176470588236",
+            "rate_adverse": "2.090909090909091"
+        }
+    },
+    {
+        "name": "HippopotamusSteakhouse",
+        "url": "https://www.google.com/maps/place/Hippopotamus+Steakhouse/@45.761003429180256,4.85647056283915,14z/data=!3m1!5s0x47f4ea6226c31167:0x6898ed8f2f83980b!4m10!1m2!2m1!1sRestaurants!3m6!1s0x47f4ea63d0609fa3:0xef08d04896ce0e1!8m2!3d45.7600154!4d4.8566422!15sCgtSZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBCnJlc3RhdXJhbnTgAQA!16s%2Fg%2F1th1td7j?entry=ttu",
+        "rate": {
+            "rate_organic": "4.106194690265487",
+            "rate_climate": "3.236842105263158",
+            "rate_water_savy": "3.7142857142857144",
+            "rate_social": "3.4175824175824174",
+            "rate_governance": "3.3473053892215567",
+            "rate_waste": "2.5961538461538463",
+            "rate_adverse": "2.6"
+        }
+    },
+    {
+        "name": "Casabea",
+        "url": "https://www.google.com/maps/place/Casabea/@45.76189633499357,4.832628609365247,14z/data=!4m10!1m2!2m1!1sRestaurants!3m6!1s0x47f4ea55b2f1d241:0xde388e1096c998f0!8m2!3d45.7617035!4d4.8325829!15sCgtSZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBCnJlc3RhdXJhbnTgAQA!16s%2Fg%2F11hzlyv1b_?entry=ttu",
+        "rate": {
+            "rate_organic": "4.1708542713567835",
+            "rate_climate": "3.9609375",
+            "rate_water_savy": "3.5185185185185186",
+            "rate_social": "3.735408560311284",
+            "rate_governance": "3.7891156462585034",
+            "rate_waste": "3.8461538461538463",
+            "rate_adverse": "2.6470588235294117"
+        }
+    },
+    {
+        "name": "LeLaurencin",
+        "url": "https://www.google.com/maps/place/Le+Laurencin/@45.7638352600546,4.827998608784782,15.25z/data=!4m10!1m2!2m1!1srestaurants+lyon!3m6!1s0x47f4ebaa95db4679:0x5be8f0448f3e0eae!8m2!3d45.763218!4d4.8278889!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SAQpyZXN0YXVyYW504AEA!16s%2Fg%2F1t_wnpt8?entry=ttu",
+        "rate": {
+            "rate_organic": "3.5625",
+            "rate_climate": "3.238095238095238",
+            "rate_water_savy": "2.966666666666667",
+            "rate_social": "3.5016447368421053",
+            "rate_governance": "2.7846153846153845",
+            "rate_waste": "2.1538461538461537",
+            "rate_adverse": "2.130434782608696"
+        }
+    },
+    {
+        "name": "RESTAURANTLEVIEUXLYON",
+        "url": "https://www.google.com/maps/place/RESTAURANT+LE+VIEUX+LYON/@45.76292413649963,4.8272487372840045,15z/data=!4m11!1m3!2m2!1srestaurants+lyon!6e5!3m6!1s0x47f4ebaae60af80d:0x41316050870114b4!8m2!3d45.7623386!4d4.8274787!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARFmcmVuY2hfcmVzdGF1cmFudOABAA!16s%2Fg%2F11csqb5bmv?entry=ttu",
+        "rate": {
+            "rate_organic": "4.636363636363637",
+            "rate_climate": "4.583333333333333",
+            "rate_water_savy": "1.0",
+            "rate_social": "3.3333333333333335",
+            "rate_governance": "4.2",
+            "rate_waste": "1.75",
+            "rate_adverse": "5.0"
+        }
+    },
+    {
+        "name": "LesMauvaisesHerbes",
+        "url": "https://www.google.com/maps/place/Les+Mauvaises+Herbes/@45.76998741526027,4.829523250440651,15z/data=!4m10!1m2!2m1!1srestaurants+v%C3%A9g%C3%A9tariens+lyons!3m6!1s0x47f4eb0211f974b1:0x8ab1762f05b0940a!8m2!3d45.7697207!4d4.8297993!15sCh5yZXN0YXVyYW50cyB2w6lnw6l0YXJpZW5zIGx5b24iL1ItL2dlby90eXBlL2VzdGFibGlzaG1lbnRfcG9pL3NlcnZlc192ZWdldGFyaWFuWiAiHnJlc3RhdXJhbnRzIHbDqWfDqXRhcmllbnMgbHlvbpIBFXZlZ2V0YXJpYW5fcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOd2VFNDNPVWxuRUFF4AEA!16s%2Fg%2F11gdyh4syb?entry=ttu",
+        "rate": {
+            "rate_organic": "4.568627450980392",
+            "rate_climate": "4.4603174603174605",
+            "rate_water_savy": "4.428571428571429",
+            "rate_social": "4.572413793103448",
+            "rate_governance": "4.733333333333333",
+            "rate_waste": "4.34",
+            "rate_adverse": "4.428571428571429"
+        }
+    },
+    {
+        "name": "Butcherest2011",
+        "url": "https://www.google.com/maps/place/Butcher+est+2011/@45.765737392950506,4.831926509625031,15z/data=!4m11!1m3!2m2!1srestaurants+viande+lyon!6e5!3m6!1s0x47f4eaffa40ca1df:0x960ae40578d5e86c!8m2!3d45.7654472!4d4.8319972!15sChdyZXN0YXVyYW50cyB2aWFuZGUgbHlvbloZIhdyZXN0YXVyYW50cyB2aWFuZGUgbHlvbpIBD21lYXRfcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSdE0zUXlTbGhuRUFF4AEA!16s%2Fg%2F1vfp7k55?entry=ttu",
+        "rate": {
+            "rate_organic": "4.111111111111111",
+            "rate_climate": "4.519230769230769",
+            "rate_water_savy": "4.333333333333333",
+            "rate_social": "4.089108910891089",
+            "rate_governance": "3.375",
+            "rate_waste": "4.0701754385964914",
+            "rate_adverse": "3.2222222222222223"
+        }
+    },
+    {
+        "name": "LaMèreBrazier",
+        "url": "https://www.google.com/maps/place/La+Mère+Brazier/@45.77178537145102,4.837119266076996,15z/data=!4m11!1m3!2m2!1srestaurants+lyon!6e5!3m6!1s0x47f4eafb72713773:0xe5f398b9fc45a817!8m2!3d45.7714429!4d4.8372134!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARZmaW5lX2RpbmluZ19yZXN0YXVyYW504AEA!16s%2Fm%2F0h7lpkr?entry=ttu",
+        "rate": {
+            "rate_organic": "3.8974358974358974",
+            "rate_climate": "4.2",
+            "rate_water_savy": "3.857142857142857",
+            "rate_social": "4.313513513513514",
+            "rate_governance": "4.076923076923077",
+            "rate_waste": "4.153846153846154",
+            "rate_adverse": "3.6666666666666665"
+        }
+    },
+    {
+        "name": "LEntreCôte",
+        "url": "https://www.google.com/maps/place/L'Entrecôte/@45.76624632766394,4.83535973703129,15z/data=!3m1!5s0x47f4eaf8cf8f203f:0xfa28dd5e59fcdbb6!4m10!1m2!2m1!1srestaurants+viande+lyon!3m6!1s0x47f4eaf8da89aa99:0xfba9a7d69a3d6a20!8m2!3d45.765624!4d4.835743!15sChdyZXN0YXVyYW50cyB2aWFuZGUgbHlvbloZIhdyZXN0YXVyYW50cyB2aWFuZGUgbHlvbpIBD21lYXRfcmVzdGF1cmFudJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VORGVqa3piSGRCUlJBQuABAA!16s%2Fg%2F1td5whrd?entry=ttu",
+        "rate": {
+            "rate_organic": "3.51271186440678",
+            "rate_climate": "2.985294117647059",
+            "rate_water_savy": "3.7142857142857144",
+            "rate_social": "3.4160583941605838",
+            "rate_governance": "2.7551020408163267",
+            "rate_waste": "2.8849557522123894",
+            "rate_adverse": "2.9444444444444446"
+        }
+    },
+    {
+        "name": "NotreMaison",
+        "url": "https://www.google.com/maps/place/Notre+Maison/@45.765019825904,4.827592060024631,15z/data=!4m11!1m3!2m2!1srestaurants+lyon!6e5!3m6!1s0x47f4eb0070894b29:0x87658339bb3030c1!8m2!3d45.7645255!4d4.8276811!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SAQpyZXN0YXVyYW504AEA!16s%2Fg%2F1tdb__8b?entry=ttu",
+        "rate": {
+            "rate_organic": "4.657608695652174",
+            "rate_climate": "4.202020202020202",
+            "rate_water_savy": "4.0588235294117645",
+            "rate_social": "4.198924731182796",
+            "rate_governance": "4.252252252252252",
+            "rate_waste": "3.3636363636363638",
+            "rate_adverse": "3.2857142857142856"
+        }
+    },
+    {
+        "name": "ITItalianTrattoriaLyonRépublique",
+        "url": "https://www.google.com/maps/place/IT+-+Italian+Trattoria+Lyon+République/@45.76642688747243,4.836132213197698,15z/data=!4m11!1m3!2m2!1srestaurants+lyon!6e5!3m6!1s0x47f4eb7bfd80d751:0xde49bd8ddde4129e!8m2!3d45.7659231!4d4.8361516!15sChByZXN0YXVyYW50cyBseW9uWhIiEHJlc3RhdXJhbnRzIGx5b26SARJpdGFsaWFuX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11j4cvrdq9?entry=ttu",
+        "rate": {
+            "rate_organic": "3.314432989690722",
+            "rate_climate": "2.672",
+            "rate_water_savy": "1.625",
+            "rate_social": "3.1385135135135136",
+            "rate_governance": "2.7058823529411766",
+            "rate_waste": "2.3454545454545452",
+            "rate_adverse": "2.4285714285714284"
+        }
+    }
+]
