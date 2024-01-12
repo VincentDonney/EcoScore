@@ -1,44 +1,56 @@
-<input type="text" [(ngModel)]="filter" #tmpsearch="ngModel" (input)="markerFilters()">
-<div class="map">
-    <div class="map-container">
-        <google-map
-            height="500px"
-            width="100%"
-            [center]="center"
-            [options]="mapOptions"
-            (mapInitialized)="handleMapInitialized($event)">
-        </google-map>
+<div class="app">
+    <div class="search-map" [class.full] = "!markerClicked" >
+        <div class="select-container">
+            <div class="filter-container">
+                <input type="text" [(ngModel)]="filter" #tmpsearch="ngModel" (input)="markerFilters()">
+            </div>
+
+            <div class="checkboxes-container">
+                <input type="checkbox" id ="Organic" value="Organic" (change)="isOrganic = !isOrganic; markerFilters()">
+                <label for="Organic">Organic</label>
+                <input type="checkbox" id="Climate" value="Climate"(change)="isClimate = !isClimate; markerFilters()">
+                <label for="Climate">Climate</label>
+                <input type="checkbox" id="WaterSavy" value="Water savy"(change)="isWaterSavy = !isWaterSavy; markerFilters()">
+                <label for="WaterSavy">Water savy</label>
+                <input type="checkbox" id="Social" value="Social" (change)="isSocial = !isSocial; markerFilters()">
+                <label for="Social">Social</label>
+                <input type="checkbox" id="Waste" value="Waste" (change)="isWaste = !isWaste; markerFilters()">
+                <label for="Waste">Waste</label>
+                <input type="checkbox" id="Governance" value="Governance" (change)="isGovernance = !isGovernance; markerFilters()">
+                <label for="Governance">Governance</label>
+                <input type="checkbox" id="Adverse" value="Adverse" (change)="isAdverse = !isAdverse; markerFilters()">
+                <label for="Adverse">Adverse</label>
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="map-container">
+                <google-map
+                    height="700px"
+                    width="100%"
+                    [center]="center"
+                    (mapInitialized)="handleMapInitialized($event)"
+                >
+                </google-map>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="infos">
+            <div *ngIf="markerClicked">
+                <p class="info-item">Name : {{ selected.label }}</p>
+                <p class="info-item">Organic rate : {{ selected.organicRate }}</p>
+                <p class="info-item">Climate rate: {{ selected.climateRate }}</p>
+                <p class="info-item">Water Savy rate: {{ selected.waterSavyRate }}</p>
+                <p class="info-item">Social rate: {{ selected.socialRate }}</p>
+                <p class="info-item">Governance rate: {{ selected.governanceRate }}</p>
+                <p class="info-item">Waste rate: {{ selected.wasteRate }}</p>
+                <p class="info-item">Adverse rate: {{ selected.adverseRate }}</p>
+            </div>
+        </div>
     </div>
 </div>
 
 
-<input type="checkbox" id ="Organic" value="Organic" #isOrganic (change)="markerFilters()">
-<label for="Organic">Organic</label>
-<input type="checkbox" id="Climate" value="Climate" #isClimate (change)="markerFilters()">
-<label for="Climate">Climate</label>
-<input type="checkbox" id="WaterSavy" value="Water savy" #isWaterSavy (change)="markerFilters()">
-<label for="WaterSavy">Water savy</label>
-<input type="checkbox" id="Social" value="Social" #isSocial (change)="markerFilters()">
-<label for="Social">Social</label>
-<input type="checkbox" id="Waste" value="Waste" #isWaste (change)="markerFilters()">
-<label for="Waste">Waste</label>
-<input type="checkbox" id="Governance" value="Governance" #isGovernance (change)="markerFilters()">
-<label for="Governance">Governance</label>
-<input type="checkbox" id="Adverse" value="Adverse" #isAdverse (change)="markerFilters()">
-<label for="Adverse">Adverse</label>
 
-<!-- Use custom zoom buttons -->
-<button (click)="zoomIn()">Zoom in</button>
-<button (click)="zoomOut()">Zoom out</button>
-
-<div *ngIf="markerClicked">
-    <p>Name : {{ selected.label }}</p>
-    <p>Number of reviews : {{ selectedNbReviews }}</p>
-    <p>Organic rate : {{ selected.organicRate }}</p>
-    <p>Climate rate: {{ selected.climateRate }}</p>
-    <p>Water Savy rate: {{ selected.waterSavyRate }}</p>
-    <p>Social rate: {{ selected.socialRate }}</p>
-    <p>Governance rate: {{ selected.governanceRate }}</p>
-    <p>Waste rate: {{ selected.wasteRate }}</p>
-    <p>Adverse rate: {{ selected.adverseRate }}</p>
-</div>
