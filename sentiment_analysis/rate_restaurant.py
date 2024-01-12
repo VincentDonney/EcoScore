@@ -34,7 +34,7 @@ class RateRestaurants:
         #                          restaurant['rate']['social'], restaurant['rate']['governance'],
         #                          restaurant['rate']['waste'], restaurant['rate']['adverse']])
 
-    def rate(self, path_json, output_csv):
+    def rate(self, path_json, output_json):
         self.load_json(path_json)
         if self.data is None:
             raise Exception("You must load a json file first!")
@@ -55,7 +55,7 @@ class RateRestaurants:
             rate = self.rating(reviews_sentiments)
             print(rate)
             output.append({'name': name, 'url': url, 'rate': rate})
-        self.store_csv(output_csv, output)
+        self.store_json(output_json, output)
 
 
 
